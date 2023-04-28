@@ -1,7 +1,5 @@
 import os
 
-folder_path = input("Path of the Folder: ")
-
 
 def bytes_to_gb(bytes):
     size_in_gb = bytes / (1024 * 1024 * 1024)
@@ -35,6 +33,7 @@ def get_folder_size(folder_path):
 
 
 if __name__ == "__main__":
+    folder_path = input("Path of the Folder: ")
     total_folder_size = get_folder_size(folder_path)
     print(
         f"Total Size: {bytes_to_gb(total_folder_size)} GB ({total_folder_size} bytes)"
